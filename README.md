@@ -42,8 +42,4 @@ The UART frame supports configurable parameters:
 The module can be integrated into FPGA projects requiring serial communication.  
 Configuration parameters such as baud rate, data width, parity, and stop bits can be selected during synthesis.
 
-## Future improvements
 
-- Support for additional baud rates
-- TX/RX FIFO buffers
-- Hardware flow control (RTS/CTS)
