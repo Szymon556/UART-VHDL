@@ -9,13 +9,16 @@ entity veryfication is
 		clk: in std_logic;
 		reset: in std_logic;
 		btn : in std_logic;
-		--rx: in std_logic;
 		conf : in std_logic_vector(1 downto 0);
 		d_num : in std_logic;
 		s_num : in std_logic;
+		----------------------
+		-- default rx and tx for mimas V2 can't use UART with 
+		-- diffrents baid rates than 19200. So to test others bauds, i using GPIO.
+		--rx: in std_logic;
+	    --tx : out std_logic;
 		par : in std_logic_vector(1 downto 0);
 		rx_test : in std_logic;
-		--tx : out std_logic;
 		led : out std_logic_vector(7 downto 0);
 		sseg: out std_logic_vector(7 downto 0);
 		an: out std_logic_vector(2 downto 0);
